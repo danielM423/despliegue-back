@@ -8,6 +8,9 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor ejecutándose en puerto ${PORT}`);
+});
 
 // Configuración de CORS para producción
 const corsOptions = {
