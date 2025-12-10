@@ -8,10 +8,25 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor ejecutándose en puerto ${PORT}`);
-});
+const HOST = '0.0.0.0';  // ¡IMPORTANTE PARA RAILWAY!
 
+app.listen(PORT, HOST, () => {
+  console.log(`=========================================`);
+  console.log(`🚀  BACKEND TODO APP - OPERACIONAL`);
+  console.log(`=========================================`);
+  console.log(`✅  Puerto: ${PORT}`);
+  console.log(`🌐  Host: ${HOST}`);
+  console.log(`📡  URL Local: http://localhost:${PORT}`);
+  console.log(`🔧  Modo: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`⏱️  Iniciado: ${new Date().toLocaleString()}`);
+  console.log(`=========================================`);
+  console.log(`📋  Endpoints disponibles:`);
+  console.log(`    GET  /              → Status`);
+  console.log(`    GET  /api/health    → Health check`);
+  console.log(`    GET  /api/todos     → Todas las tareas`);
+  console.log(`    POST /api/todos     → Crear tarea`);
+  console.log(`=========================================`);
+});
 // Configuración de CORS para producción
 const corsOptions = {
   origin: function (origin, callback) {
