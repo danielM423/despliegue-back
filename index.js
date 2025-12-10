@@ -5,7 +5,15 @@ import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 
 dotenv.config();
+const express = require('express');
+const cors = require('cors');
 
+// ¡AÑADE ESTA LÍNEA! - Definir PORT
+const PORT = process.env.PORT || 3000;
+
+// El resto de tu código...
+app.use(cors());
+app.use(express.json());
 const app = express();
 const server = app.listen(0, () => {
   console.log(`Server running on port ${server.address().port}`);
