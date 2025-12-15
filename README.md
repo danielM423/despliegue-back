@@ -9,8 +9,8 @@ Una aplicación completa de lista de tareas construida con **React** (frontend),
 
 ##  **Demo en Vivo**
 
-- ** Frontend:** [https://merry-macaron-f07172.netlify.app](https://merry-macaron-f07172.netlify.app)
-- ** Backend API:** [https://todo-lits.onrender.com](https://todo-lits.onrender.com)
+- ** Frontend:** (https://bit.ly/48FnfsW)
+- ** Backend API:** (https://app-py-to-dolist.onrender.com)
 - ** API Health:** [https://todo-lits.onrender.com/api/health](https://todo-lits.onrender.com/api/health)
 
 ##  **Características**
